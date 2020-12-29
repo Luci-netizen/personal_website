@@ -45,7 +45,7 @@ p{
 }
 
 .footer_logo{
-	float: left;
+	justify-content: center;
 	width: 5%;
 }
 
