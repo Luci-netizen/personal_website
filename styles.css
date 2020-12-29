@@ -42,6 +42,11 @@ p{
     color: blue;
 }
 
+.logo{
+	float: left;
+	width: 10%;
+}
+
 .LearnCssAnimation{
 	animation-name: ImgRotate3dAnimation;
 	animation-duration: 10s;
