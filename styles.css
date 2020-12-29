@@ -45,6 +45,11 @@ p{
 }
 
 .footer_logo{
+	padding: 0 25% 0 25%;
+	
+}
+
+.orcid, rs{
 	width: 5%;
 }
 
