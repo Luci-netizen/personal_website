@@ -45,8 +45,12 @@ p{
 }
 
 .footer_logo{
-	justify-content: center;
-	width: 5%;
+	padding: 0 25% 0 25%;
+	
+}
+
+.orcid, .rg{
+	width: 3%;
 }
 
 .LearnCssAnimation{
