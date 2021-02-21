@@ -1,26 +1,72 @@
-
+body {
+  font-family: 'Amiri', serif;
+}
 /* header  */
+.header_logo {
+	border-radius: 50%;
+	border: 2px solid black;
+}
 
-.realistic-marker-highlight{
+.LearnCssAnimation{
+	animation-name: ImgRotate3dAnimation;
+	animation-duration: 10s;
+	animation-iteration-count: infinite:
+	animation-delay: 2s;
+}
+
+@keyframes ImgRotate3dAnimation{
+	50% {transform: rotate3d(2, 0, 1, 180deg);}
+	100% {transform: rotate3d(2, 0, 1, 360deg);}
+}
+
+.realistic-marker-highlight:hover{
   position:relative;
 }
-.realistic-marker-highlight:before{
+.realistic-marker-highlight:hover:before{
   content:"";
-  background-color:#ff6db7;
+  background-color:#fc0fc0;
   width:100%;
   height:1em;
   position:absolute;
   z-index:-1;
   filter:url(#marker-shape);
   left:-0.25em;
-  top:0.1em;
+  top:0.25em;
   padding:0 0.25em;
 }
+.menu_container {
+    list-style: none;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.menu_container li,
+.menu_container a {
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+padding: 2%;
+  }
+a:visited {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.menu_container a {
+    color: #1F12DB;
+}
+
+
+
+
 hr{
-	width: 50%;
 	border-style: dotted;
 	border-width: 3px;
-	border-color: blue;
+	border-color: #1F12DB;
 	height: 0;
 
 }
@@ -37,47 +83,39 @@ p{
 }
 
 
-.menu {
-    list-style: none;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
+
+
+/* footer */
+
+#footerId {
+  background-color: #1F12DB;
 }
-
-
-.menu li,
-.menu a {
-    display: inline-block;
-}
-
-.menu a {
-    color: blue;
-}
-
-.header_logo {
-	border-radius: 50%;
-	border: 2px solid black;
-
+.footer_container{
+	text-align: center;
+  padding: 3%;
 }
 
 .footer_logo{
-	padding: 0 25% 0 25%;
-
+  padding: 1%;
+  color:#E9F7FE;
+  display: inline-block;
+}
+.footer_logo:hover{
+opacity:0.5;
+}
+.copyright {
+  padding: 1%;
+  color:#E9F7FE;
+  font-family: 'Roboto Mono', monospace;
 }
 
-.orcid, .rg{
-	width: 3%;
-}
-
-.LearnCssAnimation{
-	animation-name: ImgRotate3dAnimation;
-	animation-duration: 10s;
-	animation-iteration-count: infinite:
-	animation-delay: 2s;
+.contact-me {
+  font-family: 'Permanent Marker', cursive;
+  color: #fc0fc0;
+  font-size: 1.5rem;
+  transform: rotate(5deg);
 
 }
-
-@keyframes ImgRotate3dAnimation{
-	50% {transform: rotate3d(2, 0, 1, 180deg);}
-	100% {transform: rotate3d(2, 0, 1, 360deg);}
+.contact-me:hover{
+color: #8cff32;
 }
