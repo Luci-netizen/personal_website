@@ -3,10 +3,42 @@
 		<meta charset="utf-8">
 		<title>My personal webpage</title>
 		<link rel="stylesheet" href="styles.css">
+		<!-- fontawesome -->
+		  <script src="https://kit.fontawesome.com/c57d6c395b.js" crossorigin="anonymous"></script>
+			<!-- fonts -->
+			<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Permanent+Marker&family=Roboto+Mono&display=swap" rel="stylesheet">
 		<link rel="icon" href="favicon.ico">
 	</head>
 	<body>
-		<script
+		<header>
+			<a href="index.html"><img src="images/me.png" alt="me" class="LearnCssAnimation center header_logo"></a>
+
+			<nav>
+			    <ul class="menu_container">
+						<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  						<defs>
+    						<filter id="marker-shape">
+      						<feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      						<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    						</filter>
+  						</defs>
+						</svg>
+						<li><a href="#publications" class="nav-bar realistic-marker-highlight">Publications</a></li>
+			  		<li><a href="https://www.paleoentomology.rocks/" class="nav-bar realistic-marker-highlight">Blog</a></li>
+			      <li><a href="https://github.com/Luci-netizen" class="nav-bar realistic-marker-highlight">Other projects</a></li>
+			    </ul>
+			</nav>
+
+			<hr>
+
+
+		</header>
+
+		<div id="publications">
+
+		</div>
+		<!-- <script
 		    src="https://code.jquery.com/jquery-3.3.1.js"
 		    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		    crossorigin="anonymous">
@@ -16,10 +48,21 @@
 		  $("#headerId").load("header.html");
 		  $("#footerId").load("footer.html");
 		});
-		</script>
-			<div id="headerId"></div>
-			<hr>
-			<p>Welcome to my personal website </p>
-			<div id="footerId"></div>
+		</script> -->
+
+		<div id="footerId">
+			<footer>
+				<hr>
+				<div class="footer_container">
+				<a class="footer_logo" href="https://www.researchgate.net/profile/Lucia_Smidova"><i class="fab fa-researchgate fa-3x"></i></a>
+				<a class="footer_logo" href="https://www.instagram.com/netizenlucismid/"><i class="fab fa-instagram fa-3x"></i></a>
+				<p class="footer_logo contact-me">	<-  Contact me! </p>
+
+				<br>
+				<p class="copyright">&copy Smidova 2021</p>
+
+			</footer>
+		</div>
+	</div>
 	</body>
 </html>
