@@ -9,6 +9,7 @@
 			<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Permanent+Marker&family=Roboto+Mono&display=swap" rel="stylesheet">
 		<link rel="icon" href="favicon.ico">
+		<script src="js/getOrcidPubs.js"></script> <!-- adding orcid js for publication list-->
 	</head>
 	<body>
 		<header>
@@ -38,6 +39,12 @@
 		<div id="publications">
 
 		</div>
+		<h1>Publications</h1>
+        <div id="myPublications"></div>
+
+        <script>
+            printList("0000-0001-8041-4403", "myPublications", sort=true, classify=true);
+        </script>
 		<!-- <script
 		    src="https://code.jquery.com/jquery-3.3.1.js"
 		    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
