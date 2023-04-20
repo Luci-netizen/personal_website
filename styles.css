@@ -1,121 +1,89 @@
 body {
-  font-family: 'Amiri', serif;
+	font-family: "Amiri", serif;
 }
 /* header  */
 .header_logo {
 	border-radius: 50%;
 	border: 2px solid black;
 }
-
-.LearnCssAnimation{
-	animation-name: ImgRotate3dAnimation;
-	animation-duration: 10s;
-	animation-iteration-count: infinite:
-	animation-delay: 2s;
+.realistic-marker-highlight {
+	position: relative;
 }
-
-@keyframes ImgRotate3dAnimation{
-	50% {transform: rotate3d(2, 0, 1, 180deg);}
-	100% {transform: rotate3d(2, 0, 1, 360deg);}
-}
-
-.realistic-marker-highlight:hover{
-  position:relative;
-}
-.realistic-marker-highlight:hover:before{
-  content:"";
-  background-color:#fc0fc0;
-  width:100%;
-  height:1em;
-  position:absolute;
-  z-index:-1;
-  filter:url(#marker-shape);
-  left:-0.25em;
-  top:0.25em;
-  padding:0 0.25em;
+.realistic-marker-highlight {
+	background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=fc0fc0);
 }
 .menu_container {
-    list-style: none;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
+	list-style: none;
+	font-size: 2rem;
+	font-weight: 600;
+	text-align: center;
 }
-
-
 
 .menu_container li,
 .menu_container a {
-    display: inline-block;
-    font-family: 'Roboto Mono', monospace;
-padding: 2%;
-  }
+	display: inline-block;
+	font-family: "Roboto Mono", monospace;
+	padding: 2%;
+}
 a:visited {
-  text-decoration: none;
+	text-decoration: none;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .menu_container a {
-    color: #1F12DB;
+	color: #1f12db;
 }
 
-
-
-
-hr{
+hr {
 	border-style: dotted;
 	border-width: 3px;
-	border-color: #1F12DB;
+	border-color: #1f12db;
 	height: 0;
-
 }
 
-p{
+p {
 	text-align: center;
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10%;
 }
-
-
-
 
 /* footer */
 
 #footerId {
-  background-color: #1F12DB;
+	background-color: #1f12db;
 }
-.footer_container{
+.footer_container {
 	text-align: center;
-  padding: 3%;
+	padding: 3%;
 }
 
-.footer_logo{
-  padding: 1%;
-  color:#E9F7FE;
-  display: inline-block;
+.footer_logo {
+	padding: 1%;
+	color: #e9f7fe;
+	display: inline-block;
 }
-.footer_logo:hover{
-opacity:0.5;
+.footer_logo:hover {
+	opacity: 0.5;
 }
 .copyright {
-  padding: 1%;
-  color:#E9F7FE;
-  font-family: 'Roboto Mono', monospace;
+	padding: 1%;
+	color: #e9f7fe;
+	font-family: "Roboto Mono", monospace;
 }
 
 .contact-me {
-  font-family: 'Permanent Marker', cursive;
-  color: #fc0fc0;
-  font-size: 1.5rem;
-  transform: rotate(5deg);
-
+	font-family: "Permanent Marker", cursive;
+	color: #fc0fc0;
+	font-size: 1.5rem;
+	transform: rotate(5deg);
 }
-.contact-me:hover{
-color: #8cff32;
+.contact-me:hover {
+	color: #8cff32;
 }
